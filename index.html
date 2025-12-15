@@ -79,107 +79,439 @@
   
   <script>
     const quizData = [
-        {
-            question: "1. Windows provides a Graphical User Interface (GUI). Which of the following best describes the fundamental advantage a GUI offers over a command-line interface (CLI)?",
-            options: [
-                "A. It requires less internal system memory to operate.",
-                "B. It allows interaction with the computer using visual elements like icons and windows.",
-                "C. It executes commands and scripts more quickly than a CLI.",
-                "D. It eliminates the need for any mouse or pointing device interaction."
-            ],
-            answer: "B. It allows interaction with the computer using visual elements like icons and windows."
-        },
-        {
-            question: "2. What is the primary purpose of the Start Menu in the Windows operating system?",
-            options: [
-                "A. To show currently running applications and provide quick access to common system tools.",
-                "B. To display the main workspace where the user interacts with applications.",
-                "C. To serve as the main gateway to access programs, settings, and files.",
-                "D. To temporarily store deleted files for potential recovery."
-            ],
-            answer: "C. To serve as the main gateway to access programs, settings, and files."
-        },
-        {
-            question: "3. A user deletes a critical financial report named 'Q3_Earnings.xlsx' from their local 'Documents' folder. Where is this file primarily located immediately after deletion, and what is its status?",
-            options: [
-                "A. It is permanently erased from the hard drive, but a backup copy is stored in the cloud.",
-                "B. It is transferred to a temporary 'Deleted Items' folder accessible only via File Explorer's Quick access.",
-                "C. It is in the Recycle Bin, allowing for temporary storage and potential recovery.",
-                "D. It is moved to the 'System and Security' folder within the Control Panel."
-            ],
-            answer: "C. It is in the Recycle Bin, allowing for temporary storage and potential recovery."
-        },
-        {
-            question: "4. A user is working on three different applications: a web browser, a word processor, and a spreadsheet program. Which Taskbar function is essential for quickly transitioning between these open programs?",
-            options: [
-                "A. Providing the Search bar to find programs and files.",
-                "B. Displaying the computer's wallpaper and desktop icons.",
-                "C. Allowing switching between open applications.",
-                "D. Managing administrator privileges for the system."
-            ],
-            // Note: Answer D is kept to match the user's provided key.
-            answer: "C. Allowing switching between open applications."
-        },
-        {
-            question: "5. A student has created a new document folder named \"New Folder\" in File Explorer and now needs to rename it to \"Health Informatics Notes\". Which sequence of steps correctly renames the folder?",
-            options: [
-                "A. Double-click the folder's icon, then right-click inside the open folder, and select 'Rename.'",
-                "B. Right-click on \"New Folder\" and select \"Rename.\"",
-                "C. Drag and drop the folder into the 'Rename' panel within the File Explorer Ribbon.",
-                "D. Select the folder and navigate to the 'Hardware and Sound' category in the Control Panel."
-            ],
-            answer: "B. Right-click on \"New Folder\" and select \"Rename.\""
-        },
-        {
-            question: "6. According to 'descriptive folder names.' What is the primary benefit of following this best practice for file organization?",
-            options: [
-                "A. It automatically encrypts the folder, making it more secure.",
-                "B. It increases the overall storage capacity of the hard drive.",
-                "C. To make files easier to find and understand their contents at a glance.",
-                "D. It changes the default icon of the folder to a custom image."
-            ],
-            answer: "C. To make files easier to find and understand their contents at a glance."
-        },
-        {
-            question: "7. A nurse needs to install a new wireless blood pressure monitor that connects directly to the computer via Bluetooth. Which Control Panel category should be used to manage this device installation and configuration?",
-            options: [
-                "A. System and Security",
-                "B. Network and Internet",
-                "C. Appearance and Personalization",
-                "D. Hardware and Sound"
-            ],
-            answer: "D. Hardware and Sound"
-        },
-        {
-            question: "8. Which of the following tasks is not explicitly mentioned as an option for personalizing the desktop?",
-            options: [
-                "A. Changing the wallpaper.",
-                "B. Adjusting the screen resolution.",
-                "C. Running a diagnostic hardware check.",
-                "D. Customizing colors and themes."
-            ],
-            answer: "C. Running a diagnostic hardware check."
-        },
-        {
-            question: "9. Why are separate user accounts recommended for different users on a single computer?",
-            options: [
-                "A. To increase the system's processing speed by dedicating resources to each user.",
-                "B. To allow all users to share a single, unified set of desktop icons and settings.",
-                "C. To eliminate the need for an administrator account on the system.",
-                "D. To maintain distinct security privileges and personalized settings for each user."
-            ],
-            answer: "D. To maintain distinct security privileges and personalized settings for each user."
-        },
-        {
-            question: "10. A user is experiencing slow performance and frequent application crashes. Based on the troubleshooting tips in the lecture, which action is the most general but often the most immediate solution for *many* common issues?",
-            options: [
-                "A. Clearing the browser cache and cookies.",
-                "B. Running an extensive antivirus scan of the entire system.",
-                "C. Checking for and installing new Windows updates.",
-                "D. Restarting the computer."
-            ],
-            answer: "D. Restarting the computer."
-        }
+         
+    {
+        question: "1. In the medical term Osteoarthritis, the letter O is part of:",
+        options: [
+            "A. Word root",
+            "B. Combining vowel",
+            "C. Suffix",
+            "D. Prefix",
+            "E. None of them"
+        ],
+        answer: "B. Combining vowel"
+    },
+    {
+        question: "2. What are the word roots present in cardiothoracic term?",
+        options: [
+            "A. Cardi",
+            "B. thoracic",
+            "C. \"o\"",
+            "D. A&B",
+            "E. None of above"
+        ],
+        answer: "A. Cardi"
+    },
+    {
+        question: "3. What is the meaning of cardiomegaly?",
+        options: [
+            "A. Bone softening",
+            "B. Rapid heartbeat",
+            "C. Cardiac enlargement.",
+            "D. Inflammation of the heart",
+            "E. Surgical removal of the heart"
+        ],
+        answer: "C. Cardiac enlargement."
+    },
+    {
+        question: "4. In a case where a woman has had many children:",
+        options: [
+            "A. Primigravida",
+            "B. Nullipara",
+            "C. Multigravida",
+            "D. Multiparas",
+            "E. Unipara"
+        ],
+        answer: "D. Multiparas"
+    },
+    {
+        question: "5. Antemortem means:",
+        options: [
+            "A. After surgery",
+            "B. During life",
+            "C. After death",
+            "D. Before death.",
+            "E. Pertaining to the body"
+        ],
+        answer: "D. Before death."
+    },
+    {
+        question: "6. 4 Y/O girl called liza, she is having a sore throat for 4 days, as a doctor how would you describe this condition?",
+        options: [
+            "A. Rhinitis",
+            "B. Pharyngitis",
+            "C. Otitis",
+            "D. Tonsillitis.",
+            "E. Laryngitis"
+        ],
+        answer: "D. Tonsillitis."
+    },
+    {
+        question: "7. What is the suffix that is used for inflammation of the tonsils?",
+        options: [
+            "A. -oma",
+            "B. -pathy",
+            "C. -ectomy",
+            "D. -itis",
+            "E. -osis"
+        ],
+        answer: "D. -itis"
+    },
+    {
+        question: "8. Refers to a structure being closer to the core of the body:",
+        options: [
+            "A. Superficial",
+            "B. Distal",
+            "C. Lateral",
+            "D. Proximal",
+            "E. Deep"
+        ],
+        answer: "E. Deep"
+    },
+    {
+        question: "9. What does pandemic mean?",
+        options: [
+            "A. Confined to a single region",
+            "B. Affecting a small group of people",
+            "C. Suddenly occurring in a population",
+            "D. Affecting a large number of individuals over a wide geographic area.",
+            "E. Related to viral infection only"
+        ],
+        answer: "D. Affecting a large number of individuals over a wide geographic area."
+    },
+    {
+        question: "10. A child has a temperature of more than 40 degrees centigrade:",
+        options: [
+            "A. Fever",
+            "B. Hyperthermia",
+            "C. Pyrexia",
+            "D. Hypothermia",
+            "E. Hyperpyrexia."
+        ],
+        answer: "E. Hyperpyrexia."
+    },
+    {
+        question: "11. Thrombocytopenia:",
+        options: [
+            "A. Is the increase of red blood cells",
+            "B. Is the increase of white blood cells",
+            "C. Is the decrease of platelets in blood.",
+            "D. Is a severe bacterial infection",
+            "E. Is a blood clotting disorder"
+        ],
+        answer: "C. Is the decrease of platelets in blood."
+    },
+    {
+        question: "12. What are \"bacteriostatic drugs\" used for?",
+        options: [
+            "A. Drugs used to kill all bacteria",
+            "B. Drugs used to reduce pain",
+            "C. Drugs used to prevent viral replication",
+            "D. Drugs used to increase bacterial proliferation",
+            "E. Drugs used to arrest bacterial proliferation."
+        ],
+        answer: "E. Drugs used to arrest bacterial proliferation."
+    },
+    {
+        question: "13. John has a peptic ulcer, what procedure does he have to do?",
+        options: [
+            "A. Gastrectomy",
+            "B. Cholecystectomy",
+            "C. Appendectomy",
+            "D. Pyloroplasty.",
+            "E. Colostomy"
+        ],
+        answer: "D. Pyloroplasty."
+    },
+    {
+        question: "14. Thoracotomy:",
+        options: [
+            "A. Repair of the thorax",
+            "B. Surgical removal of the ribs",
+            "C. Incision of the chest.",
+            "D. Examination of the chest cavity",
+            "E. Pain in the chest"
+        ],
+        answer: "C. Incision of the chest."
+    },
+    {
+        question: "15. False joint on fibrous union of a fracture:",
+        options: [
+            "A. Osteomyelitis",
+            "B. Nonunion",
+            "C. Osteonecrosis",
+            "D. Pseudoarthrosis.",
+            "E. Osteoporosis"
+        ],
+        answer: "D. Pseudoarthrosis."
+    },
+    {
+        question: "16. If we divide the brain into two parts, it is:",
+        options: [
+            "A. Unilateral",
+            "B. Contralateral",
+            "C. Diagonal",
+            "D. Asymmetrical",
+            "E. symmetrical"
+        ],
+        answer: "E. symmetrical"
+    },
+    {
+        question: "17. Immature cells are:",
+        options: [
+            "A. Cytes",
+            "B. Scopes",
+            "C. Blast cells.",
+            "D. Omas",
+            "E. Osis"
+        ],
+        answer: "C. Blast cells."
+    },
+    {
+        question: "18. esthesio means......",
+        options: [
+            "A. Back",
+            "B. Cell",
+            "C. Thirst",
+            "D. Sensation/perception",
+            "E. Right"
+        ],
+        answer: "D. Sensation/perception"
+    },
+    {
+        question: "19. Which one of them is incorrect?",
+        options: [
+            "A. -algia means pain",
+            "B. -ectomy means surgical removal",
+            "C. -plasty means surgical repair",
+            "D. Ostomy means removal of .",
+            "E. -itis means inflammation"
+        ],
+        answer: "D. Ostomy means removal of ."
+    },
+    {
+        question: "20. ............is a change from one type of epithelium into another:",
+        options: [
+            "A. Dysplasia",
+            "B. Hyperplasia",
+            "C. Atrophy",
+            "D. Anaplasia",
+            "E. Metaplasia"
+        ],
+        answer: "E. Metaplasia"
+    },
+    {
+        question: "21. Accumulation of fluid in (peritoneal cavity):",
+        options: [
+            "A. Pleurisy",
+            "B. Edema",
+            "C. Hydrothorax",
+            "D. Ascites",
+            "E. Anasarca"
+        ],
+        answer: "D. Ascites"
+    },
+    {
+        question: "22. a 32-year-old woman, visits her gynecologist complaining of scanty menstruation. She reports that her periods have become increasingly light over the past few months, with only minimal bleeding lasting for a day or two. Whats the right medical term for this condition?",
+        options: [
+            "A. Menorrhagia",
+            "B. Amenorrhea",
+            "C. Dysmenorrhea",
+            "D. Metrorrhagia",
+            "E. Oligomenorrhoea."
+        ],
+        answer: "E. Oligomenorrhoea."
+    },
+    {
+        question: "23. $\ldots \ldots \ldots \ldots$ is loss of speech.",
+        options: [
+            "A. Aphasia",
+            "B. Apnea",
+            "C. Ansomia",
+            "D. Amastia",
+            "E. None of them."
+        ],
+        answer: "A. Aphasia"
+    },
+    {
+        question: "24. $\ldots \ldots \ldots \ldots$ is increased frequncy of urination.",
+        options: [
+            "A. Anuria",
+            "B. Oliguria",
+            "C. Hematuria",
+            "D. Dysuria",
+            "E. Polyuria."
+        ],
+        answer: "E. Polyuria."
+    },
+    {
+        question: "25. retrosternal pain means?",
+        options: [
+            "A. Pain in the back",
+            "B. Pain in the abdomen",
+            "C. Pain under the ribs",
+            "D. Pain behind the sternum.",
+            "E. Pain in the lower back"
+        ],
+        answer: "D. Pain behind the sternum."
+    },
+    {
+        question: "26. whats epidermis?",
+        options: [
+            "A. The inner layer of skin",
+            "B. The layer below the dermis",
+            "C. The subcutaneous tissue",
+            "D. The pigment-producing cells",
+            "E. Is the outer kerartinizing squamous epithelium covering layer of the skin."
+        ],
+        answer: "E. Is the outer kerartinizing squamous epithelium covering layer of the skin."
+    },
+    {
+        question: "27. a 45-year-old man, visits the emergency room complaining of feeling dizzy and fatigued. Upon examination, his heart rate is noted to be 132 beats per minute. Whats the correct term to describe it?",
+        options: [
+            "A. Bradycardia",
+            "B. Hypotension",
+            "C. Hypertension",
+            "D. Arrhythmia",
+            "E. Tachycardia"
+        ],
+        answer: "E. Tachycardia"
+    },
+    {
+        question: "28. $\ldots \ldots \ldots \ldots \ldots \ldots$ is the surgical repair and widening of pylorus to improve gastric emptying in the surgical treatment of peptic ulcer.",
+        options: [
+            "A. Gastrectomy",
+            "B. Cholecystectomy",
+            "C. Appendectomy",
+            "D. Colostomy",
+            "E. Pyloroplasty"
+        ],
+        answer: "E. Pyloroplasty"
+    },
+    {
+        question: "29. $\ldots \ldots \ldots \ldots \ldots \ldots$ deliver their secretions into gland.",
+        options: [
+            "A. Endocrine",
+            "B. Autocrine",
+            "C. Paracrine",
+            "D. Merocrine",
+            "E. Exocrine"
+        ],
+        answer: "E. Exocrine"
+    },
+    {
+        question: "30. Aspiration of amniotic fluid is $\ldots \ldots \ldots \ldots \ldots \ldots$",
+        options: [
+            "A. Chorionic villus sampling",
+            "B. Fetoscopy",
+            "C. Amniocentesis",
+            "D. Ultrasound",
+            "E. Hysterectomy"
+        ],
+        answer: "C. Amniocentesis"
+    },
+    {
+        question: "31. $\ldots \ldots \ldots \ldots$ is inflammation of the gallbladder.",
+        options: [
+            "A. Hepatitis",
+            "B. Gastritis",
+            "C. Nephritis",
+            "D. Cholecystitis",
+            "E. Pancreatitis"
+        ],
+        answer: "D. Cholecystitis"
+    },
+    {
+        question: "32. Inhibitor.",
+        options: [
+            "A. An agent that promotes growth",
+            "B. A substance that causes a reaction",
+            "C. An agent that inhibits growth and activity.",
+            "D. A drug that kills bacteria",
+            "E. A substance that increases energy"
+        ],
+        answer: "C. An agent that inhibits growth and activity."
+    },
+    {
+        question: "33. Amenorrhea.",
+        options: [
+            "A. Painful menstruation",
+            "B. Heavy monthly bleeding",
+            "C. Irregular monthly bleeding",
+            "D. No monthly bleeding in females.",
+            "E. Frequent monthly bleeding"
+        ],
+        answer: "D. No monthly bleeding in females."
+    },
+    {
+        question: "34. Inflammation of the heart muscles is.",
+        options: [
+            "A. Pericarditis",
+            "B. Endocarditis",
+            "C. Carditis",
+            "D. Myocarditis",
+            "E. Cardialgia"
+        ],
+        answer: "D. Myocarditis"
+    },
+    {
+        question: "35. Arthrodesis....",
+        options: [
+            "A. is the surgical removal of a joint",
+            "B. is the surgical examination of a joint",
+            "C. is the surgical repair of a joint",
+            "D. is the surgical induction of join fusion",
+            "E. is the artificial replacement of a joint"
+        ],
+        answer: "D. is the surgical induction of join fusion"
+    },
+    {
+        question: "36. Vaginal bleeding during pregnancy.",
+        options: [
+            "A. Postpartum hemorrhage",
+            "B. Menorrhagia",
+            "C. Metrorrhagia",
+            "D. Dysmenorrhea",
+            "E. Antepartum hemorrhage"
+        ],
+        answer: "E. Antepartum hemorrhage"
+    },
+    {
+        question: "37. Swelling behind the eye.",
+        options: [
+            "A. Periorbital swelling",
+            "B. Suborbital swelling",
+            "C. Supraorbital swelling",
+            "D. Intraorbital swelling",
+            "E. Retroorbital swelling"
+        ],
+        answer: "E. Retroorbital swelling"
+    },
+    {
+        question: "38. Vegetative form of a protozoan.",
+        options: [
+            "A. Cyst",
+            "B. Spore",
+            "C. Gamete",
+            "D. Trophozoite",
+            "E. Oocyst"
+        ],
+        answer: "D. Trophozoite"
+    },
+    {
+        question: "39. _________ is a freeze treatment:",
+        options: [
+            "A. Chemotherapy",
+            "B. Radiotherapy",
+            "C. Thermotherapy",
+            "D. Immunotherapy",
+            "E. Cryotherapy"
+        ],
+        answer: "E. Cryotherapy"
+    }
+
+
+
     ];
 
         let currentQuestionIndex = 0;
